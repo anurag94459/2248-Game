@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-size: cover;
+  }
+  
+  #container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    
+    margin-bottom: 10px;
+  }
+  
+  .tile {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #f9f6f2;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .tile.selected {
+    outline: 3px solid #ff6347;
+  }
+  
+  .tile-2,.tile-8192 { background-color: rgb(55, 75, 154); }
+  .tile-4,.tile-32786 { background-color: rgb(237, 224, 200); }
+  .tile-8,.tile-65536 { background-color: #42E2DD }
+  .tile-16,.tile-131072 { background-color: rgb(245, 149, 99); }
+  .tile-32 { background-color: #36DB86 }
+  .tile-64 { background-color: #BF1DDC; }
+  .tile-128 { background-color: rgb(237, 207, 114); }
+  .tile-256 { background-color:#675EF2;}
+  .tile-512 { background-color: #F85427 }
+  .tile-1024 { background-color: #23A1DF;}
+  .tile-2048 { background-color: #DB3999;}
+  .tile-4096 { background-color: #8FE10A; }
+  .tile-16384 { background-color: #8FE10A; }
+  #game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7a66;
+    color: #f9f6f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #776e65;
+  }
+  
+  #score {
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  
